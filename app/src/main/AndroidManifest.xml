@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gmail.loginui">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/circle"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/circle"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".home_activity"
+            android:label="@string/title_activity_home_activity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".Signup"
+            android:theme="@style/SignUpActivityTheme">
+            <intent-filter android:label="@string/title_activity_home_activity" android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+                <data android:scheme="http"
+                    android:host="botp-app.com"
+                    android:pathPrefix="/botp"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

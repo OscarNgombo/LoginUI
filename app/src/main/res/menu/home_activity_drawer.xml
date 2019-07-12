@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home"
+            android:title="@string/transaction" />
+        <item
+            android:id="@+id/nav_expense"
+            android:icon="@drawable/icons8_initiate_money_transfer_96px"
+            android:title="@string/menu_expense" />
+        <item
+            android:id="@+id/nav_income"
+            android:icon="@drawable/icons8_economic_improvement_96px_1"
+            android:title="@string/menu_income" />
+        <item
+            android:id="@+id/nav_planner"
+            android:icon="@drawable/icons8_planner_96px"
+            android:title="@string/menu_planner" />
+
+        <item
+            android:id="@+id/nav_tips"
+            android:icon="@drawable/icons8_tip_128px"
+            android:title="@string/menu_tools" />
+    </group>
+
+    <item android:title="@string/interact">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="@string/menu_share" />
+            <item
+                android:id="@+id/nav_contact"
+                android:icon="@drawable/icons8_contacts_96px"
+                android:title="@string/contact" />
+
+            <item
+                android:id="@+id/nav_rate"
+                android:icon="@drawable/icons8_rating_128px"
+                android:title="@string/menu_Rate" />
+            <item
+                android:id="@+id/nav_adds"
+                android:icon="@drawable/icons8_youtube_advertising_filled_100px"
+                android:title="@string/menu_why" />
+            <item
+                android:id="@+id/nav_signout"
+                android:icon="@drawable/icons8_exit_52px"
+                android:title="@string/sign_out" />
+        </menu>
+    </item>
+
+</menu>
